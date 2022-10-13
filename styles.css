@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* (paragraphs) */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+main {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Very-light-gray);
+    height: 150vh;
+    display: grid;
+    place-content: center;
+
+}
+
+article {
+    width: 400px;
+    height: 1200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+article h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Transparent-white);
+    font-size: 3rem;
+}
+
+article p {
+color: var(--Transparent-white);
+width: 200px;
+line-height: 24px;
+}
+
+article .car-type {
+    height: 400px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+article .type-sedans {
+    background-color: var(--Bright-orange);
+}
+
+article .type-suvs {
+    background-color: var(--Dark-cyan);
+}
+
+article .type-luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+button {
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    width: 150px;
+    
+}
+
+button a {
+    text-decoration: none;
+}
+
+.type-sedans button a {
+    color: var(--Bright-orange);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.type-suvs button a {
+    color: var(--Dark-cyan);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.type-luxury button a {
+    color: var(--Very-dark-cyan);
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
+@media(min-width: 640px) {
+
+    article {
+        display: flex;
+        width: 900px;
+    }
+
+    article .car-type {
+        height: 500px;
+        width: 300px;
+    }
+
+    article .type-sedans {
+        border-bottom-left-radius: 8px;
+    }
+    article .type-luxury {
+        border-bottom-right-radius: 8px;
+    }
+}
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
